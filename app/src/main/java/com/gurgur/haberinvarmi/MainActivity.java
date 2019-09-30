@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         loadDoviz(new Fragment_Doviz());
 
+        loadKategori(new FragmentKategori());
 
     }
 
@@ -55,6 +56,13 @@ public class MainActivity extends AppCompatActivity {
     public void loadDoviz(Fragment fragment){
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.frame_doviz,fragment);
+        fragmentTransaction.commit();
+    }
+
+
+    public void loadKategori(Fragment fragment){
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.frame_kategori,fragment);
         fragmentTransaction.commit();
     }
 

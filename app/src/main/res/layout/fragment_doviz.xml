@@ -8,9 +8,9 @@
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="0dp"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:gravity="center"
         android:orientation="horizontal"
@@ -35,7 +35,7 @@
                 android:paddingLeft="5dp"
                 android:text="DOLAR"
                 android:textColor="#FFF"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -47,7 +47,7 @@
                 android:paddingRight="3dp"
                 android:text="5,6730"
                 android:textColor="#8BC34A"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -69,7 +69,7 @@
                 android:paddingLeft="5dp"
                 android:text="EURO"
                 android:textColor="#FFF"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -81,14 +81,14 @@
                 android:paddingRight="3dp"
                 android:text="6,2084"
                 android:textColor="#8BC34A"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -118,7 +118,7 @@
                 android:paddingLeft="5dp"
                 android:text="ALTIN"
                 android:textColor="#FFF"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -130,7 +130,7 @@
                 android:paddingRight="3dp"
                 android:text="273,07"
                 android:textColor="#FF5722"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -152,7 +152,7 @@
                 android:paddingLeft="5dp"
                 android:text="BIST"
                 android:textColor="#FFF"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -164,7 +164,7 @@
                 android:paddingRight="3dp"
                 android:text="105,152"
                 android:textColor="#8BC34A"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
