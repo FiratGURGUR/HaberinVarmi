@@ -1,5 +1,6 @@
 package com.gurgur.haberinvarmi;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -41,7 +42,8 @@ public class SliderFragment extends Fragment {
         customCarouselView.setImageClickListener(new ImageClickListener() {
             @Override
             public void onClick(int position) {
-                Toast.makeText(getActivity(), " " + position, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(),HaberActivity.class);
+                startActivity(intent);
             }
         });
 
