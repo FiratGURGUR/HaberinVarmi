@@ -9,10 +9,12 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 public class FragmentHaber extends Fragment {
     Button favori_ekle;
     Button geri;
+    Button yorumlar;
     private boolean isButtonClicked = false; // You should add a boolean flag to record the button on/off state
     @Nullable
     @Override
@@ -40,7 +42,21 @@ public class FragmentHaber extends Fragment {
         });
 
 
+        yorumlar = view.findViewById(R.id.button5);
+        yorumlar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                loadHaber(new FragmentYorum());
+            }
+        });
 
         return view;
+    }
+
+
+    public void loadHaber(Fragment fragment){
+        FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.frame_haber,fragment);
+        fragmentTransaction.commit();
     }
 }
