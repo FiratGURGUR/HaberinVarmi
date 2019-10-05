@@ -32,10 +32,11 @@ public class KategoriAdapter  extends RecyclerView.Adapter<KategoriAdapter.ViewH
 
     private List<KategoriModel> user_list;
     private Context context;
-
-    KategoriAdapter(List<KategoriModel> user_list, Context context){
+    private CustomItemClickListener listener;
+    KategoriAdapter(List<KategoriModel> user_list, Context context, CustomItemClickListener listener){
         this.user_list = user_list;
         this.context = context;
+        this.listener = listener;
     }
 
     @NonNull
@@ -46,6 +47,12 @@ public class KategoriAdapter  extends RecyclerView.Adapter<KategoriAdapter.ViewH
         final  ViewHolder view_holder = new ViewHolder(vr);
 
 
+        vr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                listener.onItemClick(view,view_holder.getPosition());
+            }
+        });
 
         return view_holder;
     }

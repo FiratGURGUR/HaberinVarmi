@@ -1,5 +1,6 @@
 package com.gurgur.haberinvarmi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +24,7 @@ public class FragmentKategori extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull final LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_kategori,container,false);
 
         recyclerView = view.findViewById(R.id.recycle_kategori);
@@ -37,7 +38,13 @@ public class FragmentKategori extends Fragment {
         userModelList.add(new KategoriModel(R.drawable.kategori_dunya,"Dünya"));
         userModelList.add(new KategoriModel(R.drawable.kategori_sondakika,"Son Dakika"));
 
-        userAdapter =new KategoriAdapter(userModelList,getActivity());
+        userAdapter =new KategoriAdapter(userModelList, getActivity(), new CustomItemClickListener() {
+            @Override
+            public void onItemClick(View v, int position) {
+                Intent ıntent = new Intent(getActivity(),KategoriList.class);
+                startActivity(ıntent);
+            }
+        });
 
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
