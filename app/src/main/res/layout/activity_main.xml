@@ -6,95 +6,98 @@
     android:id="@+id/drawerLayout"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/activity_main"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbarF"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#266FE7"
-                android:minHeight="?attr/actionBarSize"
-                android:theme="?attr/actionBarTheme"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Haberin var mı?"
-                android:textColor="#fff"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/toolbarF"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/toolbarF" />
-
-            <FrameLayout
-                android:id="@+id/frame_main"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toolbarF">
-
-            </FrameLayout>
-
-            <FrameLayout
-                android:id="@+id/frame_doviz"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/frame_main">
-
-            </FrameLayout>
-
-            <LinearLayout
-                android:id="@+id/linearLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingLeft="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/frame_doviz">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#266FE7"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="?attr/actionBarTheme"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView26"
+                    android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kategoriler"
-                    android:textColor="#448AFF"
-                    android:textSize="18sp"
-                    android:textStyle="italic" />
+                    android:text="Haberin var mı?"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/toolbarF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/toolbarF" />
 
-            </LinearLayout>
+                <FrameLayout
+                    android:id="@+id/frame_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbarF">
 
-            <FrameLayout
-                android:id="@+id/frame_kategori"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+                </FrameLayout>
 
-            </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/frame_doviz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/frame_main">
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                </FrameLayout>
 
-    </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/frame_doviz">
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kategoriler"
+                        android:textColor="#448AFF"
+                        android:textSize="18sp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/frame_kategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                </FrameLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
 
 
     <!--    <fragment

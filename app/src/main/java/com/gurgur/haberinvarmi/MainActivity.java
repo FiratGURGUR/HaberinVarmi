@@ -7,11 +7,24 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.app.ProgressDialog;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 
 public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
+    ProgressDialog pd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,5 +79,9 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frame_kategori,fragment);
         fragmentTransaction.commit();
     }
+
+
+
+
 
 }
