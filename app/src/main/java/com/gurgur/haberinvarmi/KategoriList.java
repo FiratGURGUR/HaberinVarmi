@@ -27,19 +27,19 @@ public class KategoriList extends AppCompatActivity {
 
 
         katModelList.add(new KategoriListModel(R.drawable.image_1,"Define avcılarına suçüstü!"));
-        katModelList.add(new KategoriListModel(R.drawable.image_1,"Son dakika | Marmaris açıklarında deprem!"));
-        katModelList.add(new KategoriListModel(R.drawable.image_1,"Son dakika! Jandarmaları taşıyan midibüsle TIR çarpıştı!"));
-        katModelList.add(new KategoriListModel(R.drawable.image_1,"Ajanslar biraz önce geçti! 3 il için uyarı: Çok kuvvetli olacak"));
-        katModelList.add(new KategoriListModel(R.drawable.image_1,"Şoke eden iddia: Evli olmasına rağmen benim kızımı..."));
+        katModelList.add(new KategoriListModel(R.drawable.image_2,"Son dakika | Marmaris açıklarında deprem!"));
+        katModelList.add(new KategoriListModel(R.drawable.image_3,"Son dakika! Jandarmaları taşıyan midibüsle TIR çarpıştı!"));
+        katModelList.add(new KategoriListModel(R.drawable.kivanc,"Ajanslar biraz önce geçti! 3 il için uyarı: Çok kuvvetli olacak"));
+        katModelList.add(new KategoriListModel(R.drawable.adriana,"Şoke eden iddia: Evli olmasına rağmen benim kızımı..."));
+        katModelList.add(new KategoriListModel(R.drawable.firat,"Kayıp emekli polis, kuyuda başından vurulmuş halde bulundu"));
+        katModelList.add(new KategoriListModel(R.drawable.scarlett,"Antalya’da genç kızların sosyal medya tartışması kanlı bitti"));
+        katModelList.add(new KategoriListModel(R.drawable.kategori_dunya,"Define avcılarına suçüstü!"));
+        katModelList.add(new KategoriListModel(R.drawable.kategori_finans,"Son dakika | Marmaris açıklarında deprem!"));
+        katModelList.add(new KategoriListModel(R.drawable.kategori_saglik,"Son dakika! Jandarmaları taşıyan midibüsle TIR çarpıştı!"));
+        katModelList.add(new KategoriListModel(R.drawable.kategori_gundem,"Ajanslar biraz önce geçti! 3 il için uyarı: Çok kuvvetli olacak"));
+        katModelList.add(new KategoriListModel(R.drawable.kategori_sondakika,"Şoke eden iddia: Evli olmasına rağmen benim kızımı..."));
         katModelList.add(new KategoriListModel(R.drawable.image_1,"Kayıp emekli polis, kuyuda başından vurulmuş halde bulundu"));
-        katModelList.add(new KategoriListModel(R.drawable.image_1,"Antalya’da genç kızların sosyal medya tartışması kanlı bitti"));
-        katModelList.add(new KategoriListModel(R.drawable.image_1,"Define avcılarına suçüstü!"));
-        katModelList.add(new KategoriListModel(R.drawable.image_1,"Son dakika | Marmaris açıklarında deprem!"));
-        katModelList.add(new KategoriListModel(R.drawable.image_1,"Son dakika! Jandarmaları taşıyan midibüsle TIR çarpıştı!"));
-        katModelList.add(new KategoriListModel(R.drawable.image_1,"Ajanslar biraz önce geçti! 3 il için uyarı: Çok kuvvetli olacak"));
-        katModelList.add(new KategoriListModel(R.drawable.image_1,"Şoke eden iddia: Evli olmasına rağmen benim kızımı..."));
-        katModelList.add(new KategoriListModel(R.drawable.image_1,"Kayıp emekli polis, kuyuda başından vurulmuş halde bulundu"));
-        katModelList.add(new KategoriListModel(R.drawable.image_1,"Antalya’da genç kızların sosyal medya tartışması kanlı bitti"));
+        katModelList.add(new KategoriListModel(R.drawable.image_2,"Antalya’da genç kızların sosyal medya tartışması kanlı bitti"));
         katAdapter =new KategoriListAdapter(katModelList,this);
 
 
