@@ -23,7 +23,7 @@
             android:layout_height="match_parent"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="#D5352F2F"
+            android:background="#266FE7"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="5dp">
@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="5dp"
                 android:text="DOLAR"
-                android:textColor="#FFF"
+                android:textColor="#FFE047"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -46,7 +46,7 @@
                 android:gravity="right"
                 android:paddingRight="3dp"
                 android:text="5,6730"
-                android:textColor="#8BC34A"
+                android:textColor="#fff"
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -56,7 +56,7 @@
             android:layout_height="match_parent"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="#D5352F2F"
+            android:background="#266FE7"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="5dp">
@@ -68,7 +68,7 @@
                 android:layout_weight="1"
                 android:paddingLeft="5dp"
                 android:text="EURO"
-                android:textColor="#FFF"
+                android:textColor="#FFE047"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -80,7 +80,7 @@
                 android:gravity="right"
                 android:paddingRight="3dp"
                 android:text="6,2084"
-                android:textColor="#8BC34A"
+                android:textColor="#fff"
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -105,7 +105,7 @@
             android:layout_height="match_parent"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="#D5352F2F"
+            android:background="#266FE7"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="5dp">
@@ -117,7 +117,7 @@
                 android:layout_weight="1"
                 android:paddingLeft="5dp"
                 android:text="ALTIN"
-                android:textColor="#FFF"
+                android:textColor="#FFE047"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -129,7 +129,7 @@
                 android:gravity="right"
                 android:paddingRight="3dp"
                 android:text="273,07"
-                android:textColor="#FF5722"
+                android:textColor="#fff"
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -139,7 +139,7 @@
             android:layout_height="match_parent"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="#D5352F2F"
+            android:background="#266FE7"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="5dp">
@@ -150,8 +150,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingLeft="5dp"
-                android:text="BIST"
-                android:textColor="#FFF"
+                android:text="STERLİN"
+                android:textColor="#FFE047"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -163,7 +163,7 @@
                 android:gravity="right"
                 android:paddingRight="3dp"
                 android:text="105,152"
-                android:textColor="#8BC34A"
+                android:textColor="#fff"
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
